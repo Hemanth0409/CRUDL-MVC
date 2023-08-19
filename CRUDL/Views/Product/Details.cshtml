@@ -1,0 +1,43 @@
+﻿@model CRUDL.Models.ProductDetails
+
+<div>
+    <h4>ProductDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptName)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.ProId }) |
+    @Html.ActionLink("Back to List", "DisplayTable")
+</p>
