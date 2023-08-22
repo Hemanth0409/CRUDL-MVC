@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CRUDL.Models.CompanyProp>
+
+@{
+    Layout = "~/Views/Shared/_PartialViewLayout.cshtml";
+}
+<div>
+    <h4>CompanyProp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @foreach (var d in ViewData["companyProps"] as IList<CRUDL.Models.CompanyProp>)
+        {
+            <dt>
+                Id
+            </dt>
+            <dd>@d.Id</dd>
+            <dt>
+                Name
+            </dt>
+            <dd>@d.CompanyName</dd>
+            <dt>
+                Description
+            </dt>
+            <dd>@d.CompanyDescription</dd>
+            <dt>
+                Email
+            </dt>
+            <dd>@d.CompanyPhone</dd>
+
+        }
+    </dl>
+</div>
+
+
+<div>
+    <p class="fs-5">Skillsets provided in the Company are</p>
+    <ul>
+        @foreach (string skills in ViewBag.Skillsets)
+        {
+            <li>@skills</li>
+        }
+    </ul>
+</div>

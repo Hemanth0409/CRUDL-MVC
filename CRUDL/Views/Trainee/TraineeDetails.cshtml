@@ -1,0 +1,44 @@
+﻿@model CRUDL.Models.Trainee
+
+    @{
+        Layout = "~/Views/Shared/_LayoutViewTT.cshtml";
+    }
+
+<div>
+    <h4>Trainee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.traineeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.traineeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.traineeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.traineeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.department)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trainerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trainerId)
+        </dd>
+
+    </dl>
+</div>
+

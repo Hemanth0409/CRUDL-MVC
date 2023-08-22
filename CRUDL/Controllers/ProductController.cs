@@ -8,8 +8,7 @@ namespace CRUDL.Controllers
 {
     public class ProductController : Controller
     {
-        ProductDetails productDetails;
-        // GET: Product
+        // GET: Product6
         static IList<ProductDetails> products = new List<ProductDetails>
         {
             new ProductDetails(){ProId=01,ProName="Apple",Price=100,DeptName=dept.fruits}

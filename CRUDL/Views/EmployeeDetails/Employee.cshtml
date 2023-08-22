@@ -1,0 +1,48 @@
+﻿@model CRUDL.ViewModels.EmployeeDetails
+@{
+    Layout = "~/Views/Shared/_PartialViewLayout.cshtml";
+}
+<div class="fs-2">
+    Employee Details
+</div>
+<hr />
+<div class="row">
+    <div class="col-6">
+        <div class="fs-2">
+           Trainee Details
+        </div>
+        <dl class="dl-horizontal">
+            <dt>
+                Id
+            </dt>
+            <dd>@Model.Trainee.traineeId </dd>
+            <dt>
+                Name
+            </dt>
+            <dd>@Model.Trainee.traineeName</dd>
+            <dt>
+                Department
+            </dt>
+            <dd>@Model.Trainee.department</dd>
+        </dl>
+    </div>
+    <div class="col-6">
+        <dl class="dl-horizontal">
+            <div class="fs-2">
+                Trainer Details
+            </div>
+            <dt>
+                Id
+            </dt>
+            <dd>@Model.Trainer.trainerId </dd>
+            <dt>
+                Name
+            </dt>
+            <dd>@Model.Trainer.trainerName</dd>
+            <dt>
+                Department
+            </dt>
+            <dd>@Model.Trainer.department</dd>
+        </dl>
+    </div>
+</div>
